@@ -1,4 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul{
+    list-style: none; /* Eliminar punto o decoracion */
+}
+
+a {
+    text-decoration: none; /* Eliminar que se muestre com esa linea de hipervinculo */
+}
+
+header {
+    background-color: rgb(2, 49, 94);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+header nav ul {
+    display: flex;
+    gap: 1.2em;
+    padding: 20px;
+}
+
+header nav ul li a{
+    color: white;
+}
+
+.tamano{
+    width: 150px;
+    height: 100px;
+   
+}
+
+/* margen de la imagen del header*/
+.margen{
+    padding: 0.5em;
+}
+
+.seccion-1 {
+    background-color: rgb(192, 192, 192);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+.tamano2{
+    width: 250px;
+    height: 250px;
+   
+}
+
+.acerca-de {
+    padding-right: 1em;
+}
+
+.seccion-2 img {
+    width: 100%;
+}
+
+.tamano3{
+    height: 750px;
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+}
+
+#footer{
+    color: white;
+    padding: 2em;
+}
+
+
+
+
+
+
+/*
+
 img {
     width: 350px;
     height: 300px;
 }
+
+*/
