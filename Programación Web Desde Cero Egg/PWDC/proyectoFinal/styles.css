@@ -68,13 +68,19 @@ header nav ul li a{
 }
 
 footer {
-    background-color: black;
-    width: 100%;
+    background-color: rgb(2, 49, 94);
+   
 }
 
 #footer{
     color: white;
-    padding: 2em;
+    padding: 1em;
+}
+
+.fixed {
+    position: fixed;
+    bottom: 22px;
+    right: 39px;
 }
 
 
