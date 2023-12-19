@@ -17,6 +17,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    width: 100%; /* Añade esta propiedad para que ocupe todo el ancho */
+    z-index: 1000; /* Añade un índice z alto para que el encabezado esté por encima de otros elementos fijos */
 }
 
 
@@ -49,6 +52,10 @@ header nav ul li a{
     padding: 2em;
 }
 
+.seccion-1 h2 {
+    color: brown;
+}
+
 .tamano2{
     width: 250px;
     height: 250px;
@@ -57,6 +64,11 @@ header nav ul li a{
 
 .acerca-de {
     padding-right: 1em;
+    padding-top: 5em;
+   
+}
+.acerca-imagen {
+   padding-top: 7em;
 }
 
 .seccion-2 img {
@@ -83,13 +95,51 @@ footer {
     right: 39px;
 }
 
+.seccion-3 {
+    background-color: rgb(192, 192, 192);
+}
 
 
+.pagina {
+    display: flex;
+    justify-content: space-evenly; /* Ajusta el espacio entre los elementos */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si no hay suficiente espacio */
+   
+  }
+  
+.card {
+    width: 500px; /* Ajusta el ancho de las tarjetas según tus preferencias */
+    margin: 1em; /* Agrega un margen entre las tarjetas */
+    text-align: center; /* Centra el contenido dentro de las tarjetas */
+}
+
+.card img {
+    width: 500px; /* Asegura que la imagen dentro de la tarjeta ocupe el 100% del ancho de la tarjeta */
+    height: 450px; /* Ajusta la altura automáticamente para mantener la proporción */
+    border-radius: 50px;
+}
+
+.card h2 {
+    font-size:24px;
+    margin-bottom:10px;
+    color: brown;
+ }
+ 
+ .card p {
+    font-size:18px;
+    margin-bottom:20px;
+ }
+ 
+ .card a {
+    text-decoration:none; 
+    color:#fff; 
+    background-color:#333; 
+    padding:10px; 
+ }
 
 
 
 /*
-
 img {
     width: 350px;
     height: 300px;
