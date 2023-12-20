@@ -65,6 +65,8 @@ header nav ul li a{
 .acerca-de {
     padding-right: 1em;
     padding-top: 5em;
+    
+    
    
 }
 .acerca-imagen {
@@ -137,7 +139,99 @@ footer {
     padding:10px; 
  }
 
+ .title{
+    color: rgb(4, 172, 4);
+}
 
+#check {
+    display: none;
+}
+
+.checkbtn {
+    font-size: 25px;
+    color: rgb(236, 241, 236);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) 
+{
+    /* Aquí puedes escribir los estilos que se aplicarán en pantallas más pequeñas */
+    header 
+    {
+        background-color: rgb(170, 45, 6);
+        
+    }
+    .seccion-1 
+    {
+        flex-direction: column;
+        
+    }
+
+    .acerca-de {
+        text-align: center;
+        
+        
+       
+    }
+
+    .acerca-imagen {
+        padding-top: 1em;
+     }
+
+     #footer{
+        background-color: rgb(170, 45, 6);
+        text-align: center;
+     }
+
+     .title {
+        color: black;
+     }
+
+     
+     .checkbtn{
+        display: block;
+     }
+
+     
+
+     #encabezado ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background:#333;
+        text-align: center;
+        top: 80px;
+        left: 100%;
+        transition: all 0.5s;
+     }
+
+     #check:checked ~ ul {
+        left: 0%;
+        display: block;
+     }
+
+     #encabezado nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+        background-color: brown;
+     }
+
+     #encabezado nav ul li a{
+        font-size: 20px;
+     }
+
+     #check:checked ~ .checkbtn {
+        color: blue;
+     }
+
+}
 
 /*
 img {
