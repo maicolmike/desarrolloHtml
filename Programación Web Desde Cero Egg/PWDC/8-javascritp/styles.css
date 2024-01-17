@@ -1,0 +1,242 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul{
+    list-style: none; /* Eliminar punto o decoracion */
+}
+
+a {
+    text-decoration: none; /* Eliminar que se muestre com esa linea de hipervinculo */
+}
+
+header {
+    background-color: rgb(2, 49, 94);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%; /* Añade esta propiedad para que ocupe todo el ancho */
+    z-index: 1000; /* Añade un índice z alto para que el encabezado esté por encima de otros elementos fijos */
+}
+
+
+header nav ul {
+    display: flex;
+    gap: 1.2em;
+    padding: 20px;
+}
+
+header nav ul li a{
+    color: white;
+}
+
+.tamano{
+    width: 150px;
+    height: 100px;
+   
+}
+
+/* margen de la imagen del header*/
+.margen{
+    padding: 0.5em;
+}
+
+.seccion-1 {
+    background-color: rgb(192, 192, 192);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+.seccion-1 h2 {
+    color: brown;
+}
+
+.tamano2{
+    width: 250px;
+    height: 250px;
+   
+}
+
+.acerca-de {
+    padding-right: 1em;
+    padding-top: 5em;
+    
+    
+   
+}
+.acerca-imagen {
+   padding-top: 7em;
+}
+
+.seccion-2 img {
+    width: 100%;
+}
+
+.tamano3{
+    height: 750px;
+}
+
+footer {
+    background-color: rgb(2, 49, 94);
+   
+}
+
+#footer{
+    color: white;
+    padding: 1em;
+}
+
+.fixed {
+    position: fixed;
+    bottom: 22px;
+    right: 39px;
+}
+
+.seccion-3 {
+    background-color: rgb(192, 192, 192);
+}
+
+
+.pagina {
+    display: flex;
+    justify-content: space-evenly; /* Ajusta el espacio entre los elementos */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si no hay suficiente espacio */
+   
+  }
+  
+.card {
+    width: 500px; /* Ajusta el ancho de las tarjetas según tus preferencias */
+    margin: 1em; /* Agrega un margen entre las tarjetas */
+    text-align: center; /* Centra el contenido dentro de las tarjetas */
+}
+
+.card img {
+    width: 500px; /* Asegura que la imagen dentro de la tarjeta ocupe el 100% del ancho de la tarjeta */
+    height: 450px; /* Ajusta la altura automáticamente para mantener la proporción */
+    border-radius: 50px;
+}
+
+.card h2 {
+    font-size:24px;
+    margin-bottom:10px;
+    color: brown;
+ }
+ 
+ .card p {
+    font-size:18px;
+    margin-bottom:20px;
+ }
+ 
+ .card a {
+    text-decoration:none; 
+    color:#fff; 
+    background-color:#333; 
+    padding:10px; 
+ }
+
+ .title{
+    color: rgb(4, 172, 4);
+}
+
+#check {
+    display: none;
+}
+
+.checkbtn {
+    font-size: 25px;
+    color: rgb(236, 241, 236);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) 
+{
+    /* Aquí puedes escribir los estilos que se aplicarán en pantallas más pequeñas */
+    header 
+    {
+        background-color: rgb(170, 45, 6);
+        
+    }
+    .seccion-1 
+    {
+        flex-direction: column;
+        
+    }
+
+    .acerca-de {
+        text-align: center;
+        
+        
+       
+    }
+
+    .acerca-imagen {
+        padding-top: 1em;
+     }
+
+     #footer{
+        background-color: rgb(170, 45, 6);
+        text-align: center;
+     }
+
+     .title {
+        color: black;
+     }
+
+     
+     .checkbtn{
+        display: block;
+     }
+
+     
+
+     #encabezado ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background:#333;
+        text-align: center;
+        top: 80px;
+        left: 100%;
+        transition: all 0.5s;
+     }
+
+     #check:checked ~ ul {
+        left: 0%;
+        display: block;
+     }
+
+     #encabezado nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+        background-color: brown;
+     }
+
+     #encabezado nav ul li a{
+        font-size: 20px;
+     }
+
+     #check:checked ~ .checkbtn {
+        color: blue;
+     }
+
+}
+
+/*
+img {
+    width: 350px;
+    height: 300px;
+}
+
+*/
