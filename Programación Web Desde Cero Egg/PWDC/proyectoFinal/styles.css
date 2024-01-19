@@ -280,7 +280,8 @@ img {
     flex-wrap: wrap;
   }
   
-  .form-row input[type="text"]
+  .form-row input[type="text"],
+  .form-row input[type="email"]
    {
     background-color: #bdbdbd;
     border: 0;
@@ -289,16 +290,6 @@ img {
     padding: 7px;
     font-size: 14px;
   }
-  .form-row input[type="email"]
-   {
-    background-color: #bdbdbd;
-    border: 0;
-    border-radius: 6px;
-    width: 26%;
-    padding: 7px;
-    font-size: 14px;
-  }
-
   
   .form-row label {
     margin-bottom: 3px;
@@ -317,7 +308,8 @@ img {
       align-items: flex-start;
       margin-bottom: 20px;
     }
-    .form-row input[type="text"] {
+    .form-row input[type="text"],
+    .form-row input[type="email"] {
       width: 250px;
       height: initial;
     }
