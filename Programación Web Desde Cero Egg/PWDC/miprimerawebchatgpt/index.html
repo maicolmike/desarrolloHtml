@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Nombre - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Tu Nombre</h1>
+            <nav>
+                <ul>
+                    <li><a href="#sobre-mi">Sobre Mí</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="sobre-mi">
+        <div class="container">
+            <h2>Sobre Mí</h2>
+            <p>Breve descripción sobre ti y tus habilidades. Puedes incluir tu enfoque principal, tecnologías que dominas y tu experiencia.</p>
+        </div>
+    </section>
+
+    <section id="proyectos">
+        <div class="container">
+            <h2>Proyectos</h2>
+            <div class="projects">
+                <div class="project">
+                    <img src="img/fondo3.jpg" alt="Proyecto 1">
+                    <h3>Proyecto 1</h3>
+                    <p>Descripción breve del proyecto y las tecnologías utilizadas.</p>
+                </div>
+
+                <div class="project">
+                    <img src="img/fondo7.jpg" alt="Proyecto 2">
+                    <h3>Proyecto 2</h3>
+                    <p>Otra descripción breve del proyecto y las tecnologías utilizadas.</p>
+                </div>
+                <!-- Agrega más proyectos según sea necesario -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <div class="container">
+            <h2>Contacto</h2>
+            <p>¡Me encantaría escuchar de ti! Contáctame a través del formulario o encuentra mis perfiles en redes sociales.</p>
+            <form id="contact-form">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Contacto: tu@email.com | Enlaces a tus redes sociales</p>
+        </div>
+    </footer>
+
+</body>
+</html>
