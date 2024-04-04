@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteo cootep</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('img/plantillaSorteo.jpg'); /* Ruta de la imagen de fondo */
+            background-size: cover; /* Ajustar la imagen para cubrir el fondo */
+            background-position: center; /* Centrar la imagen en el fondo */
+            background-repeat: no-repeat; /* Evitar repetición de la imagen */
+            background-attachment: fixed;
+            height: 100vh; /* Asegurar que la imagen cubra toda la altura de la ventana */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            color: white; /* Color del texto */
+        }
+
+        /* Estilos para el contenido superpuesto */
+        .contenido {
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para resaltar el texto */
+            padding: 20px;
+            border-radius: 20px;
+            
+        }
+
+        #idtextarea{
+            text-align:center;  /* alinear el texto*/
+            line-height: 300px;  /* establecer el centro*/
+            width: 300px;   /* ancho del textarea*/
+            height: 300px;  /* alto del textarea*/
+            font-size: 350px;  /* tamaño texto*/
+            resize: none;  /* no se pueda hacer grande o pequeño el text area*/
+            overflow: hidden;  /* desactive el scroll*/
+
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+    <!-- <img src="img/plantillaSorteo.jpg" width="" height="" alt="COOTEP LTDA" title="COOTEP LTDA"> -->
+    <div class="container-fluid" style="padding-left: 230px;">
+        <!-- inicio numeros-->
+        <div class="contenido row">
+            <div class="col">
+                <h2 class="text-info" style="font-size: 71px;">Balota #1</h2>
+                <textarea name="" id="idtextarea" cols="30" rows="10"></textarea>
+            </div>
+            <div class="col">
+                <h2 class="text-primary" style="font-size: 71px;">Balota #2</h2>
+                <textarea name="" id="idtextarea" cols="30" rows="10"></textarea>
+            </div>
+            <div class="col">
+                <h2 class="text-white"style="font-size: 71px;">Balota #3</h2>
+                <textarea name="" id="idtextarea" cols="30" rows="10"></textarea>
+            </div>
+            <div class="col">
+                <h2 class="text-warning"style="font-size: 71px;">Balota #4</h2>
+                <textarea name="" id="idtextarea" cols="30" rows="10"></textarea>
+            </div>
+        
+        </div>
+        <!-- fin numeros-->
+    </div>
+   
+<footer>
+    <p>Derechos de autor © 2023. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
